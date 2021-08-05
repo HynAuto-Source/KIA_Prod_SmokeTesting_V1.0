@@ -1,456 +1,373 @@
 $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("./src/test/java/feature/ProdSmokeTesting.feature");
 formatter.feature({
   "line": 1,
-  "name": "KIA Customer Web Portal feature",
+  "name": "Login Action",
   "description": "",
-  "id": "kia-customer-web-portal-feature",
+  "id": "login-action",
   "keyword": "Feature"
 });
 formatter.scenarioOutline({
   "comments": [
     {
+      "line": 3,
+      "value": "#Background: Successful Login with valid credentials"
+    },
+    {
+      "line": 4,
+      "value": "#\tGiven User is on KIA web portal Home Page"
+    },
+    {
       "line": 5,
+      "value": "#\tAnd Login button displayed"
+    },
+    {
+      "line": 6,
+      "value": "#\tWhen User navigates to SignIn section"
+    },
+    {
+      "line": 7,
+      "value": "#\t#And User enter \"\u003cusername\u003e\" and \"\u003cpassword\u003e\""
+    },
+    {
+      "line": 8,
+      "value": "#\tAnd user enter \"497phevniro@mailinator.com\" and \"Password1\""
+    },
+    {
+      "line": 9,
+      "value": "#\tThen User navigate to the MyVehicle Page"
+    },
+    {
+      "line": 10,
+      "value": "#"
+    },
+    {
+      "line": 11,
+      "value": "#"
+    },
+    {
+      "line": 12,
+      "value": "#Scenario: User picks the vehicle from MyVehicle section"
+    },
+    {
+      "line": 13,
+      "value": "#\tGiven User is on MyVehicle section"
+    },
+    {
+      "line": 14,
+      "value": "#\tWhen User select the vehicle"
+    },
+    {
+      "line": 15,
+      "value": "#\tThen User navigate to the Dashboard section"
+    },
+    {
+      "line": 16,
+      "value": "#"
+    },
+    {
+      "line": 17,
+      "value": "#"
+    },
+    {
+      "line": 18,
+      "value": "#Scenario: Perform Door Lock/Unlock and Remote Climate Start/Stop"
+    },
+    {
+      "line": 19,
+      "value": "#\tGiven User is on Dashbaord page"
+    },
+    {
+      "line": 20,
+      "value": "#"
+    },
+    {
+      "line": 25,
       "value": "#With Examples keyword"
     }
   ],
-  "line": 6,
-  "name": "KIA Customer Web Portal Smoke Testcases",
+  "line": 26,
+  "name": "Successful Login with valid credentials",
   "description": "",
-  "id": "kia-customer-web-portal-feature;kia-customer-web-portal-smoke-testcases",
+  "id": "login-action;successful-login-with-valid-credentials",
   "type": "scenario_outline",
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 8,
+  "line": 28,
   "name": "user is on KIA web portal Landing Page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 9,
+  "line": 29,
   "name": "page title is Kia Owners Portal",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 30,
+  "name": "user clicks the Sign in button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 31,
+  "name": "user enter the \"\u003cusername\u003e\" and \"\u003cpassword\u003e\"",
   "keyword": "When "
 });
 formatter.step({
-  "line": 10,
-  "name": "user clicks the Sign in button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 11,
-  "name": "user enter the \"\u003cusername\u003e\" and \"\u003cpassword\u003e\"",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 12,
+  "line": 32,
   "name": "user clicks the login button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 33,
+  "name": "user is on welcome page",
   "keyword": "Then "
 });
 formatter.step({
-  "comments": [
-    {
-      "line": 13,
-      "value": "#Then user is on welcome page"
-    },
-    {
-      "line": 14,
-      "value": "#Then user pick the vehicle"
-    }
-  ],
-  "line": 15,
-  "name": "user is on dashboard page",
+  "line": 34,
+  "name": "user pick the vehicle",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 16,
+  "line": 35,
+  "name": "user is on dashboard pag e",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 36,
   "name": "fetch the name of the vehicle",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 17,
+  "line": 37,
   "name": "get the status of the door",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 18,
+  "line": 38,
   "name": "user clicks the lockUnlock option",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 19,
+  "line": 39,
   "name": "user clicks the remoteClimate option",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 20,
-  "name": "user find the vehicle location",
+  "comments": [
+    {
+      "line": 40,
+      "value": "#Then user find the vehicle location"
+    },
+    {
+      "line": 41,
+      "value": "#Then capture the alert message"
+    }
+  ],
+  "line": 42,
+  "name": "close the browser",
   "keyword": "Then "
 });
 formatter.examples({
-  "comments": [
-    {
-      "line": 21,
-      "value": "#Then capture the alert message"
-    },
-    {
-      "line": 22,
-      "value": "#Then close the browser"
-    }
-  ],
-  "line": 25,
+  "line": 45,
   "name": "",
   "description": "",
-  "id": "kia-customer-web-portal-feature;kia-customer-web-portal-smoke-testcases;",
+  "id": "login-action;successful-login-with-valid-credentials;",
   "rows": [
     {
       "cells": [
         "username",
         "password"
       ],
-      "line": 27,
-      "id": "kia-customer-web-portal-feature;kia-customer-web-portal-smoke-testcases;;1"
+      "line": 47,
+      "id": "login-action;successful-login-with-valid-credentials;;1"
     },
     {
       "cells": [
-        "jfpe93@mailinator.com",
+        "497phevniro@mailinator.com",
         "Password1"
       ],
-      "line": 28,
-      "id": "kia-customer-web-portal-feature;kia-customer-web-portal-smoke-testcases;;2"
-    },
-    {
-      "cells": [
-        "kia.haea1@gmail.com",
-        "Password1"
-      ],
-      "line": 29,
-      "id": "kia-customer-web-portal-feature;kia-customer-web-portal-smoke-testcases;;3"
+      "line": 48,
+      "id": "login-action;successful-login-with-valid-credentials;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.scenario({
+  "line": 48,
+  "name": "Successful Login with valid credentials",
+  "description": "",
+  "id": "login-action;successful-login-with-valid-credentials;;2",
+  "type": "scenario",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
   "line": 28,
-  "name": "KIA Customer Web Portal Smoke Testcases",
-  "description": "",
-  "id": "kia-customer-web-portal-feature;kia-customer-web-portal-smoke-testcases;;2",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 8,
   "name": "user is on KIA web portal Landing Page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 9,
-  "name": "page title is Kia Owners Portal",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 10,
-  "name": "user clicks the Sign in button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 11,
-  "name": "user enter the \"jfpe93@mailinator.com\" and \"Password1\"",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 12,
-  "name": "user clicks the login button",
-  "keyword": "Then "
-});
-formatter.step({
-  "comments": [
-    {
-      "line": 13,
-      "value": "#Then user is on welcome page"
-    },
-    {
-      "line": 14,
-      "value": "#Then user pick the vehicle"
-    }
-  ],
-  "line": 15,
-  "name": "user is on dashboard page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 16,
-  "name": "fetch the name of the vehicle",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 17,
-  "name": "get the status of the door",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 18,
-  "name": "user clicks the lockUnlock option",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 19,
-  "name": "user clicks the remoteClimate option",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 20,
-  "name": "user find the vehicle location",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "ProdSmokeTestingSD.user_is_on_KIA_web_portal_Landing_Page()"
-});
-formatter.result({
-  "duration": 19509424339,
-  "status": "passed"
-});
-formatter.match({
-  "location": "ProdSmokeTestingSD.page_title_is_Kia_Owners_Portal()"
-});
-formatter.result({
-  "duration": 10763891,
-  "status": "passed"
-});
-formatter.match({
-  "location": "ProdSmokeTestingSD.user_clicks_the_Sign_in_button()"
-});
-formatter.result({
-  "duration": 10102448467,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "jfpe93@mailinator.com",
-      "offset": 16
-    },
-    {
-      "val": "Password1",
-      "offset": 44
-    }
-  ],
-  "location": "ProdSmokeTestingSD.user_enter_the_username_and_password(String,String)"
-});
-formatter.result({
-  "duration": 364887440,
-  "status": "passed"
-});
-formatter.match({
-  "location": "ProdSmokeTestingSD.user_clicks_the_login_button()"
-});
-formatter.result({
-  "duration": 30093484119,
-  "status": "passed"
-});
-formatter.match({
-  "location": "ProdSmokeTestingSD.user_is_on_dashboard_page()"
-});
-formatter.result({
-  "duration": 10024972574,
-  "status": "passed"
-});
-formatter.match({
-  "location": "ProdSmokeTestingSD.fetch_the_name_of_the_vehicle()"
-});
-formatter.result({
-  "duration": 10053421055,
-  "status": "passed"
-});
-formatter.match({
-  "location": "ProdSmokeTestingSD.get_the_status_of_the_door()"
-});
-formatter.result({
-  "duration": 10045705478,
-  "status": "passed"
-});
-formatter.match({
-  "location": "ProdSmokeTestingSD.user_clicks_the_lockUnlock_option()"
-});
-formatter.result({
-  "duration": 156416341509,
-  "error_message": "org.openqa.selenium.WebDriverException: chrome not reachable\n  (Session info: chrome\u003d79.0.3945.79)\n  (Driver info: chromedriver\u003d78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}),platform\u003dWindows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 6.01 seconds\nBuild info: version: \u00272.53.1\u0027, revision: \u0027a36b8b1cd5757287168e54b817830adce9b0158d\u0027, time: \u00272016-06-30 19:26:09\u0027\nSystem info: host: \u0027ICT-2003278-AQA\u0027, ip: \u002710.108.25.73\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u00271.8.0_231\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{mobileEmulationEnabled\u003dfalse, timeouts\u003d{implicit\u003d0, pageLoad\u003d300000, script\u003d30000}, hasTouchScreen\u003dfalse, platform\u003dXP, acceptSslCerts\u003dfalse, goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:56622}, acceptInsecureCerts\u003dfalse, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003dignore, applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}), userDataDir\u003dC:\\Users\\2003278\\AppData\\Local\\Temp\\scoped_dir6676_140267650}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, strictFileInteractability\u003dfalse, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, version\u003d79.0.3945.79, browserConnectionEnabled\u003dfalse, proxy\u003d{}, nativeEvents\u003dtrue, locationContextEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue}]\nSession ID: ef9c361b7b51bae3668448efa22ff995\n*** Element info: {Using\u003dxpath, value\u003d(//span[@class\u003d\u0027state-1 active\u0027])[1]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)\r\n\tat stepDefinitions.ProdSmokeTestingSD.user_clicks_the_lockUnlock_option(ProdSmokeTestingSD.java:134)\r\n\tat ✽.Then user clicks the lockUnlock option(./src/test/java/feature/ProdSmokeTesting.feature:18)\r\n",
-  "status": "failed"
-});
-formatter.match({
-  "location": "ProdSmokeTestingSD.user_clicks_the_remoteClimate_start_option()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "ProdSmokeTestingSD.user_find_the_vehicle_location()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
   "line": 29,
-  "name": "KIA Customer Web Portal Smoke Testcases",
-  "description": "",
-  "id": "kia-customer-web-portal-feature;kia-customer-web-portal-smoke-testcases;;3",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 8,
-  "name": "user is on KIA web portal Landing Page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 9,
   "name": "page title is Kia Owners Portal",
-  "keyword": "When "
+  "keyword": "And "
 });
 formatter.step({
-  "line": 10,
+  "line": 30,
   "name": "user clicks the Sign in button",
-  "keyword": "Then "
+  "keyword": "And "
 });
 formatter.step({
-  "line": 11,
-  "name": "user enter the \"kia.haea1@gmail.com\" and \"Password1\"",
+  "line": 31,
+  "name": "user enter the \"497phevniro@mailinator.com\" and \"Password1\"",
   "matchedColumns": [
     0,
     1
   ],
+  "keyword": "When "
+});
+formatter.step({
+  "line": 32,
+  "name": "user clicks the login button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 33,
+  "name": "user is on welcome page",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 12,
-  "name": "user clicks the login button",
+  "line": 34,
+  "name": "user pick the vehicle",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 35,
+  "name": "user is on dashboard pag e",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 36,
+  "name": "fetch the name of the vehicle",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 37,
+  "name": "get the status of the door",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 38,
+  "name": "user clicks the lockUnlock option",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 39,
+  "name": "user clicks the remoteClimate option",
   "keyword": "Then "
 });
 formatter.step({
   "comments": [
     {
-      "line": 13,
-      "value": "#Then user is on welcome page"
+      "line": 40,
+      "value": "#Then user find the vehicle location"
     },
     {
-      "line": 14,
-      "value": "#Then user pick the vehicle"
+      "line": 41,
+      "value": "#Then capture the alert message"
     }
   ],
-  "line": 15,
-  "name": "user is on dashboard page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 16,
-  "name": "fetch the name of the vehicle",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 17,
-  "name": "get the status of the door",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 18,
-  "name": "user clicks the lockUnlock option",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 19,
-  "name": "user clicks the remoteClimate option",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 20,
-  "name": "user find the vehicle location",
+  "line": 42,
+  "name": "close the browser",
   "keyword": "Then "
 });
 formatter.match({
   "location": "ProdSmokeTestingSD.user_is_on_KIA_web_portal_Landing_Page()"
 });
 formatter.result({
-  "duration": 19228192824,
+  "duration": 46819876900,
   "status": "passed"
 });
 formatter.match({
   "location": "ProdSmokeTestingSD.page_title_is_Kia_Owners_Portal()"
 });
 formatter.result({
-  "duration": 8118789,
+  "duration": 38456700,
   "status": "passed"
 });
 formatter.match({
   "location": "ProdSmokeTestingSD.user_clicks_the_Sign_in_button()"
 });
 formatter.result({
-  "duration": 10130541851,
+  "duration": 10099117600,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "kia.haea1@gmail.com",
+      "val": "497phevniro@mailinator.com",
       "offset": 16
     },
     {
       "val": "Password1",
-      "offset": 42
+      "offset": 49
     }
   ],
   "location": "ProdSmokeTestingSD.user_enter_the_username_and_password(String,String)"
 });
 formatter.result({
-  "duration": 343766079,
+  "duration": 291579000,
   "status": "passed"
 });
 formatter.match({
   "location": "ProdSmokeTestingSD.user_clicks_the_login_button()"
 });
 formatter.result({
-  "duration": 30098565499,
+  "duration": 30102374400,
   "status": "passed"
 });
 formatter.match({
-  "location": "ProdSmokeTestingSD.user_is_on_dashboard_page()"
+  "location": "ProdSmokeTestingSD.user_is_on_welcome_page()"
 });
 formatter.result({
-  "duration": 10025556383,
+  "duration": 28836831700,
   "status": "passed"
+});
+formatter.match({
+  "location": "ProdSmokeTestingSD.user_pick_the_vehicle()"
+});
+formatter.result({
+  "duration": 76037419700,
+  "status": "passed"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
 });
 formatter.match({
   "location": "ProdSmokeTestingSD.fetch_the_name_of_the_vehicle()"
 });
 formatter.result({
-  "duration": 10049255163,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "ProdSmokeTestingSD.get_the_status_of_the_door()"
 });
 formatter.result({
-  "duration": 10048856761,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "ProdSmokeTestingSD.user_clicks_the_lockUnlock_option()"
 });
 formatter.result({
-  "duration": 300884813277,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "ProdSmokeTestingSD.user_clicks_the_remoteClimate_start_option()"
 });
 formatter.result({
-  "duration": 120681374902,
-  "error_message": "org.openqa.selenium.ElementNotVisibleException: element not interactable\n  (Session info: chrome\u003d79.0.3945.79)\n  (Driver info: chromedriver\u003d78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}),platform\u003dWindows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 20 milliseconds\nBuild info: version: \u00272.53.1\u0027, revision: \u0027a36b8b1cd5757287168e54b817830adce9b0158d\u0027, time: \u00272016-06-30 19:26:09\u0027\nSystem info: host: \u0027ICT-2003278-AQA\u0027, ip: \u002710.108.25.73\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u00271.8.0_231\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{mobileEmulationEnabled\u003dfalse, timeouts\u003d{implicit\u003d0, pageLoad\u003d300000, script\u003d30000}, hasTouchScreen\u003dfalse, platform\u003dXP, acceptSslCerts\u003dfalse, goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:56787}, acceptInsecureCerts\u003dfalse, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003dignore, applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}), userDataDir\u003dC:\\Users\\2003278\\AppData\\Local\\Temp\\scoped_dir7524_1668961312}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, strictFileInteractability\u003dfalse, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, version\u003d79.0.3945.79, browserConnectionEnabled\u003dfalse, proxy\u003d{}, nativeEvents\u003dtrue, locationContextEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue}]\nSession ID: a3d4fc1f448f368de32138268e848a24\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)\r\n\tat stepDefinitions.ProdSmokeTestingSD.user_clicks_the_remoteClimate_start_option(ProdSmokeTestingSD.java:213)\r\n\tat ✽.Then user clicks the remoteClimate option(./src/test/java/feature/ProdSmokeTesting.feature:19)\r\n",
-  "status": "failed"
+  "status": "skipped"
 });
 formatter.match({
-  "location": "ProdSmokeTestingSD.user_find_the_vehicle_location()"
+  "location": "ProdSmokeTestingSD.close_the_browser()"
 });
 formatter.result({
   "status": "skipped"
